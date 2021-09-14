@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Welcome to relative url templates</h1>
+
+    <!-- <a href="basic_app/other.html">The Other Page</a> -->
+    <!-- The name should match the template tagging name in app urls.py -->
+    <!-- 'basic_app:other' no space on both sides-->
+    <a href="{% url 'basic_app:other' %}">The other page</a>
+
+    <a href="{% url 'admin:index' %}">Link to admin</a>
+
+    <a href="{% url 'index' %}">Linked to index</a>
+
+
+  </body>
+</html>
